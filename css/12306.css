@@ -1,0 +1,418 @@
+
+/*除去默认内外边距*/
+* {
+	margin: 0px; 
+	padding: 0px;
+}
+
+/**顶部布局开始***/
+.top {
+	width: 100%;
+	height: 80px;
+}
+
+.top_img {
+	margin-top: 15px;
+	margin-left: 24px;
+}
+
+
+.top_search {
+	width: 1130px;
+	height: 70px;
+	border: 0px solid red;
+	float: right;
+	margin-top: 10px;
+	background-image: url(../img/train.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 1130px 40px;
+	line-height: 70px;
+}
+
+.top_search_input {
+	width: 420px;
+	height: 25px;
+	margin-left: 100px;
+	outline: none;
+}
+
+.top_search_input:focus {
+	width: 422px;
+	border: 2px black solid;
+	border-right: none;
+}
+
+.top_search_img {
+	position: relative;
+    top: 10px;
+    left: -7px;
+}
+
+.top_search_list {
+	width: 390px;
+	height: 70px;
+	border: 0px solid  green;
+	float: right;
+	margin-right: 115px;
+}
+
+.top_search_list li {
+	list-style: none;
+	float: left;
+	margin-left: 22px;
+}
+
+.top_search_list a {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+
+.top_search_a {
+	color: #333333;
+}
+
+.top_search_a:hover {
+	color: #2676E3;
+}
+
+.top_search_a:active {
+	color: red;
+}
+.top_search_list span {
+	font-size: 12px;
+	color: #ACD1F9;
+}
+
+/**顶部布局结束***/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/**顶部导航的开始**/
+.nav {
+	width: 100%;
+	height: 40px;
+	background-color: #3B99FC;
+}
+
+.nav_center {
+	width: 1200px;
+	height: 40px;
+	border:  0px solid red;
+	margin:0px auto;			/*div自动居中*/
+	line-height: 40px;			/*垂直居中*/
+	/*text-align: center;*/		/*水平居中*/
+}
+
+
+.nav_center_second {
+	position: relative;			/*子绝父相*/
+}
+
+.nav_center_second .nav_center_select {/*实现下拉框*/
+	position: absolute;
+	width: 400px;
+	height: 0px;
+	background-color: #2676e3;
+	/*display: none;*/
+	overflow: hidden;
+	transition: height 1.3s;	/*添加过渡效果*/
+}
+
+.nav_center_second:hover .nav_center_select {
+	/*z-index: 9999;*/
+	display: block;
+	height: 80px;
+	/*transition: height;*/
+}
+
+
+.nav_center li {
+	list-style: none;
+	float: left;
+	height: 40px;
+	width: 148px;
+	/*border: 0px solid  green;*/
+	text-align: center;
+}
+
+.nav_center a:hover {
+	color: red;
+	background-color: #2676e3;
+	display: block;
+	
+}
+
+.nav_center_second:hover a {
+	color: red;
+	background-color:#2676E3 ;
+}
+
+
+.nav_center a {
+	display: block;
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.nav_center_first a {
+	color: red;
+	background-color: #2676e3;
+}
+
+
+/**顶部导航的结束**/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/*轮播图开始*/
+.tranform {
+	width: 100%;
+	height: 450px;
+	border: 0px solid red;
+	background-image: url(../img/banner09.jpg);
+	animation: 30s trans infinite;
+}
+
+@keyframes trans {
+	0%{background-image: url(../img/banner09.jpg);}
+	25%{background-image: url(../img/banner11.jpg);}
+	50%{background-image: url(../img/banner12.jpg);}
+	75%{background-image: url(../img/banner13.jpg);}
+	100%{background-image: url(../img/banner09.jpg);}
+}
+
+/*轮播图的结束*/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/*铁路预约开始*/
+.customer {
+	width: 1200px;
+	height: 140px;
+	border: 0px solid red;
+	margin: 0px  auto; 							/*水平方向自动居中*/
+	background-image: url(../img/bgline.png);
+}
+
+.customer li {
+	list-style: none;
+	width:169px ;
+	height: 140px;
+	border: 0px solid red;
+	float: left;
+	text-align: center;
+}
+
+.customer img {
+	margin-top: 37px;
+}
+
+.customer a {
+	display: block;
+	font-size: 14px;
+	color: #333333;
+	text-decoration: none;
+}
+
+/*铁路预约结束*/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/**会员服务开始***/
+.service {
+	width: 1200px;
+	height: 340px;
+	border: 0px solid red;
+	margin: 0px auto;
+}
+
+.service div{
+	width: 590px;
+	height: 160px;
+	border: 0px solid green;
+	float: left;
+}
+
+.service_01{
+	margin-left: 15px;
+}
+
+.service_02{
+	margin-top: 15px;
+}
+
+/**会员服务结束***/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/**更多服务开始***/
+.more {
+	width: 1200px;
+	height: 40px;
+    /*border:  1px solid red;*/
+    margin: 0px auto;
+    line-height: 40px;
+    border-bottom: 2px solid #DEDEDE;
+    margin-top: 30px;
+}
+
+.more span {
+	color: #3B99FC;
+	font-size: 16px;
+}
+
+.more a {
+	float: right;
+	font-size: 14px;
+	color: #999999;
+	text-decoration: none;
+}
+
+/**更多服务结束***/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/**铁路旅游信息开始***/
+.info {
+	width: 1200px;
+	height: 500px;
+	border: 0px solid #DEDEDE;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+.info div {
+	width: 290px;
+	height: 245px;
+	border: 1px solid #DEDEDE;
+	float: left;
+}
+
+.info_div1 {
+	margin-left: 10px;
+}
+
+.info_div2 {
+	margin-top: 7px;
+}
+
+.info_img {
+	width: 290px;
+	height: 157px;
+	border: 0px solid red;
+}
+
+.info_p1 {
+	font-size: 14px;
+	color: #333333;
+	margin-top: 5px;
+}
+
+.info_p2 {
+	font-size: 20px;
+	color: #ff8201;
+	margin-top: 5px;
+	margin-left: 11px;
+}
+/**铁路旅游信息结束***/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/**铁路最新发布开始***/
+.show {
+	height: 40px;
+	width: 1200px;
+	border: 0px solid red;
+	margin: 0px auto;
+	margin-top: 40px;
+}
+
+.show div {
+	width: 390px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+}
+
+.show_div1 {
+	background-color: #3B99FC;
+	color: #FFFFFF;
+}
+
+.show_div2 {
+	margin-left: 15px;
+	background-color: #EFEFF4;
+	color: #333333;
+}
+
+/**铁路最新发布结束***/
+/*------------------------------------------------------------------------------------------------*/
+
+
+.sign {
+	width: 1196px;
+	height: 255px;
+	border: 2px solid #DEDEDE;
+	margin: 0px auto;
+}
+
+.sign div {
+	width: 525px;
+	height: 195px;
+	border: 0px solid  red;
+	float: left;
+	margin-left: 60px;
+}
+
+.sign_msg1 li{
+	margin-top: 20px;
+}
+
+.sign_msg1 span {
+	float: right;
+	font-size: 12px;
+	color: #999999;
+}
+
+.sign_msg1 a{
+	font-size: 14px;
+	color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
